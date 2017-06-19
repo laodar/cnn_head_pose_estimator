@@ -6,25 +6,25 @@
 
     num of params < 100K
 
-##CNN model
+    CNN model:
 
-conv1 3*3*32,(2,2),relu
+    conv1 3*3*32,(2,2),relu
 
-conv2 3*3*32,(2,2),relu
+    conv2 3*3*32,(2,2),relu
 
-conv3 3*3*64,(2,2),relu
+    conv3 3*3*64,(2,2),relu
 
-conv4 3*3*64,(2,2),relu
+    conv4 3*3*64,(2,2),relu
 
-fc1   128,relu
+    fc1   128,relu
 
-fc2   2,tanh
+    fc2   2,tanh
 
-##dataset:
+    dataset:
 
-1.http://www-prima.inrialpes.fr/perso/Gourier/Faces/HPDatabase.html
+    1.http://www-prima.inrialpes.fr/perso/Gourier/Faces/HPDatabase.html
 
-2.[Biwi Kinect Head Pose Database](http://data.vision.ee.ethz.ch/cvl/gfanelli/kinect_head_pose_db.tgz)
+    2.[Biwi Kinect Head Pose Database](http://data.vision.ee.ethz.ch/cvl/gfanelli/kinect_head_pose_db.tgz)
 
 ## Requirement
 
