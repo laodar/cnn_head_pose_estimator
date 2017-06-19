@@ -22,7 +22,7 @@ run:
 
 ``python main.py``
 
-examples from validation set:
+examples from validation set:(green as label,red as prediction)
 <p align="center">
 <img src="examples_in_validation_set.jpg" width="960">
 </p>
