@@ -33,7 +33,7 @@ class HeadPoseEstimator(object):
                 img:a 64*64*3 numpy array,bgr order,range [0,255]
             Returns:
             -------
-                [[yaw,pitch]] numpy array,range [-90,90]
+                [[pitch,yaw]] numpy array,range [-90,90]
         '''
         img = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)[None,:,:,:]
         return self.model.predict(img.transpose([0, 3, 1, 2]))[0]
@@ -192,7 +192,7 @@ class HeadPoseEstimator(object):
                     https://github.com/pangyupo/mxnet_mtcnn_face_detection
             Returns:
             -------
-                n*2 (yaw,pitch) numpy array,range [-90,90]
+                n*2 (pitch,yaw) numpy array,range [-90,90]
         '''
         imgs = self.extract_image_chips(img,points)
         return self.model.predict(imgs.transpose([0, 3, 1, 2]))[0]
