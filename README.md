@@ -52,3 +52,7 @@ examples from validation set:(green as label,red as prediction)
 <p align="center">
 <img src="examples_in_validation_set.jpg" width="960">
 </p>
+
+## Notice
+
+so sorry for that my model is not robust in real scene, it seems to be sensitive to the background and lights because of the oversimplified public dataset,maybe we can synthesis more data with better background based on HPDatabase.
